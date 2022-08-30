@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"golang.org/x/sys/cpu"
 	"runtime"
+
+	"golang.org/x/sys/cpu"
 )
 
 func main() {
