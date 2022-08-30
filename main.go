@@ -10,7 +10,7 @@ import (
 func main() {
 	fmt.Printf("CryptoTestGO %s (%s, %s ,%s)\n", Version, runtime.Version(), runtime.GOOS, runtime.GOARCH)
 	fmt.Println("GitHub: https://github.com/H1JK/CryptoTestGO")
-	fmt.Println("\nIllegal usage. If you want to run from code, use `go test -cpu 1 -benchmem -bench=BenchmarkCrypto ./...`")
+	fmt.Println("\nIllegal usage. If you want to run from code, use `go test -cpu 1 -bench=. ./...`")
 }
 
 func GetSecurityAutoType() (old string, new string) {

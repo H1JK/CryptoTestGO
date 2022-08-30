@@ -47,5 +47,5 @@ fileName="CryptoTestGO-${os}-${osArchitecture}${fileSuffix}"
 wget "https://download.fastgit.org/H1JK/CryptoTestGO/releases/latest/download/${fileName}" -N
 
 chmod +x "${fileName}"
-./${fileName} -"test.cpu" 1 -"test.benchmem" -"test.bench"=.
+./${fileName} -"test.cpu" 1 -"test.bench"=.
 rm ${fileName}

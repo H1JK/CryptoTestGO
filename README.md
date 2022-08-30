@@ -4,7 +4,7 @@ Yet another benchmark tool.
 
 ## Run with one-click script
 
-Script will use `-cpu 1 -benchmem` argument to launch the test, which means it will only test single core performance.  
+Script will use `-cpu 1` argument to launch the test, which means it will only test single core performance.  
 
 Bash (cURL):  
 ```shell
@@ -18,7 +18,7 @@ wget https://raw.fastgit.org/H1JK/CryptoTestGO/master/run.sh -O runCryptoTestGO.
 
 ## Run with code
 ```shell
-go test -cpu 1 -benchmem -bench=BenchmarkCrypto ./...
+go test -cpu 1 -bench=. ./...
 ```
 
 ## License
