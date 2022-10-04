@@ -16,7 +16,16 @@ Bash (Wget):
 wget https://raw.fastgit.org/H1JK/CryptoTestGO/master/run.sh -O runCryptoTestGO.sh && chmod +x ./runCryptoTestGO.sh && ./runCryptoTestGO.sh
 ```
 
+## Run with binary file
+
+You can download the binary file from [releases](https://github.com/H1JK/CryptoTestGO/releases/).
+
+```shell
+./CryptoTestGO -"test.cpu" 1 -"test.bench"=.
+```
+
 ## Run with code
+
 ```shell
 go test -cpu 1 -bench=. ./...
 ```
