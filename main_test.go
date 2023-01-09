@@ -145,7 +145,7 @@ func BenchmarkCrypto(b *testing.B) {
 	fmt.Printf("CryptoTestGO %s (%s, %s/%s)\n", Version, runtime.Version(), runtime.GOOS, runtime.GOARCH)
 	fmt.Println("GitHub: https://github.com/H1JK/CryptoTestGO")
 	old, new := GetSecurityAutoType()
-	fmt.Printf("VMess AUTO will choose: Xray/V2Fly 5.0.8-: %s, V2Fly 5.0.8+: %s\n", old, new)
+	fmt.Printf("VMess AUTO will choose: Xray 1.7.2-/V2Fly 5.0.8-: %s, Xray 1.7.2+/V2Fly 5.0.8+: %s\n", old, new)
 	b.Run("AES-GCM", benchmarkAESGCM)
 	b.Run("ChaCha20-Poly1305", benchmarkChacha20Poly1305)
 }
